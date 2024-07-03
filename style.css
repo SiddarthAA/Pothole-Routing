@@ -1,0 +1,39 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.stButton>button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.stButton>button:hover {
+    background-color: #45a049;
+}
+
+.map-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.map-header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4CAF50;
+}
