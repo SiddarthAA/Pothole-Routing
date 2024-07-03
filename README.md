@@ -69,7 +69,7 @@ streamlit run App.py
 
 Our web interface, built with Streamlit, provides an enhanced user experience. It displays real-time route analysis, highlighting pothole-prone areas and suggesting the best route to minimize discomfort and potential vehicle damage.
 
-![Pothole Map](images/pothole_map.png)
+![Pothole Map](Sample.PNG)
 
 ## 🌐 Integrations
 

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f5df4f12ea51aef03a03491108d7e9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f5df4f12ea51aef03a03491108d7e9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f5df4f12ea51aef03a03491108d7e9c = L.map(
+                "map_8f5df4f12ea51aef03a03491108d7e9c",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fba689d9a48caaa6065dba1186f9e552 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fba689d9a48caaa6065dba1186f9e552.addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var marker_6d32ce21f6f9a68d2de7e75e55d5f5d9 = L.marker(
+                [12.853143976398991, 77.67786875367166],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_b0997d2d9a4acb354e21aaa1e16b7dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6d32ce21f6f9a68d2de7e75e55d5f5d9.setIcon(icon_b0997d2d9a4acb354e21aaa1e16b7dd6);
+        
+    
+        var popup_ea112f741ff99bc8e266a1dfb70b7326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b11f41a4ed584ffeed09298c08d2d18e = $(`<div id="html_b11f41a4ed584ffeed09298c08d2d18e" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_ea112f741ff99bc8e266a1dfb70b7326.setContent(html_b11f41a4ed584ffeed09298c08d2d18e);
+            
+        
+
+        marker_6d32ce21f6f9a68d2de7e75e55d5f5d9.bindPopup(popup_ea112f741ff99bc8e266a1dfb70b7326)
+        ;
+
+        
+    
+    
+            var marker_be3d4a190044d4ca742e014e7f59b40e = L.marker(
+                [12.851960685167779, 77.67605423927307],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_1f787f846e722196392e96bcba9a7f1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_be3d4a190044d4ca742e014e7f59b40e.setIcon(icon_1f787f846e722196392e96bcba9a7f1c);
+        
+    
+        var popup_07526aa36d64255f5fa4ccf70be3efe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8e2488134e3596e0feb6f4acc9b6cb7 = $(`<div id="html_d8e2488134e3596e0feb6f4acc9b6cb7" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_07526aa36d64255f5fa4ccf70be3efe7.setContent(html_d8e2488134e3596e0feb6f4acc9b6cb7);
+            
+        
+
+        marker_be3d4a190044d4ca742e014e7f59b40e.bindPopup(popup_07526aa36d64255f5fa4ccf70be3efe7)
+        ;
+
+        
+    
+    
+            var marker_13fe0e7c67f547626f40df00d9856c62 = L.marker(
+                [12.849795443905393, 77.67711639404298],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_cfcc530c3adebcead4e03fef8edc6d04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_13fe0e7c67f547626f40df00d9856c62.setIcon(icon_cfcc530c3adebcead4e03fef8edc6d04);
+        
+    
+        var popup_5a6992bea5c1a3abf0fb5bcd8e52b4cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd2fd7b5ab9ea3d3f41e561900a04557 = $(`<div id="html_bd2fd7b5ab9ea3d3f41e561900a04557" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_5a6992bea5c1a3abf0fb5bcd8e52b4cd.setContent(html_bd2fd7b5ab9ea3d3f41e561900a04557);
+            
+        
+
+        marker_13fe0e7c67f547626f40df00d9856c62.bindPopup(popup_5a6992bea5c1a3abf0fb5bcd8e52b4cd)
+        ;
+
+        
+    
+    
+            var marker_409385030a8e87bb7c7661dd6a71074a = L.marker(
+                [12.84736867789241, 77.67484188079835],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_500cb7c92e23ce8812cb8bb9520d2894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_409385030a8e87bb7c7661dd6a71074a.setIcon(icon_500cb7c92e23ce8812cb8bb9520d2894);
+        
+    
+        var popup_2d3c699e6beb81b7e6a011b7b40b18b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87ff45091ce084b0daef93a126eed59f = $(`<div id="html_87ff45091ce084b0daef93a126eed59f" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_2d3c699e6beb81b7e6a011b7b40b18b1.setContent(html_87ff45091ce084b0daef93a126eed59f);
+            
+        
+
+        marker_409385030a8e87bb7c7661dd6a71074a.bindPopup(popup_2d3c699e6beb81b7e6a011b7b40b18b1)
+        ;
+
+        
+    
+    
+            var marker_47908be664499337b5e5da90a4a63278 = L.marker(
+                [12.848623904619243, 77.66994953155519],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_731455210780ffc65abff2dd63a30448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_47908be664499337b5e5da90a4a63278.setIcon(icon_731455210780ffc65abff2dd63a30448);
+        
+    
+        var popup_851b772d55c49072c3d5cf9d896d8aac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2781481afb9589f71cb1ec656b84b7e = $(`<div id="html_d2781481afb9589f71cb1ec656b84b7e" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_851b772d55c49072c3d5cf9d896d8aac.setContent(html_d2781481afb9589f71cb1ec656b84b7e);
+            
+        
+
+        marker_47908be664499337b5e5da90a4a63278.bindPopup(popup_851b772d55c49072c3d5cf9d896d8aac)
+        ;
+
+        
+    
+    
+            var marker_f1aea42d663237c9d8e95aff095cc9ef = L.marker(
+                [12.85975330717164, 77.66106605529787],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_be7e63b03c7d1a48a0cdbaf5851b88ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f1aea42d663237c9d8e95aff095cc9ef.setIcon(icon_be7e63b03c7d1a48a0cdbaf5851b88ca);
+        
+    
+        var popup_209d4b43627092783f9589c0b8e9196f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc240ff6f11daef49232415481287e77 = $(`<div id="html_dc240ff6f11daef49232415481287e77" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_209d4b43627092783f9589c0b8e9196f.setContent(html_dc240ff6f11daef49232415481287e77);
+            
+        
+
+        marker_f1aea42d663237c9d8e95aff095cc9ef.bindPopup(popup_209d4b43627092783f9589c0b8e9196f)
+        ;
+
+        
+    
+    
+            var marker_f708129e2f216f7b56cc39465bc26639 = L.marker(
+                [12.871091401510947, 77.65192508697511],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_efe5b595508f40a5e43619f1f967e21a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f708129e2f216f7b56cc39465bc26639.setIcon(icon_efe5b595508f40a5e43619f1f967e21a);
+        
+    
+        var popup_60c1866119fe4c4dffb42c2fbf908e46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98744116f81b1aa5ad05140d8981c011 = $(`<div id="html_98744116f81b1aa5ad05140d8981c011" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_60c1866119fe4c4dffb42c2fbf908e46.setContent(html_98744116f81b1aa5ad05140d8981c011);
+            
+        
+
+        marker_f708129e2f216f7b56cc39465bc26639.bindPopup(popup_60c1866119fe4c4dffb42c2fbf908e46)
+        ;
+
+        
+    
+    
+            var marker_c9c8da0327656fc2c496243c1d6f7160 = L.marker(
+                [12.87468936121205, 77.64849185943605],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_d379c0a3bb727eedf79f15b5e8cc5a7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c9c8da0327656fc2c496243c1d6f7160.setIcon(icon_d379c0a3bb727eedf79f15b5e8cc5a7e);
+        
+    
+        var popup_7f8aba8a1e6d36d9b890a519051e8c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b432ec7ff8b5a2e9458728cf078c2683 = $(`<div id="html_b432ec7ff8b5a2e9458728cf078c2683" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_7f8aba8a1e6d36d9b890a519051e8c8f.setContent(html_b432ec7ff8b5a2e9458728cf078c2683);
+            
+        
+
+        marker_c9c8da0327656fc2c496243c1d6f7160.bindPopup(popup_7f8aba8a1e6d36d9b890a519051e8c8f)
+        ;
+
+        
+    
+    
+            var marker_43df07d3b02a0d9a30ce3533898dfb9a = L.marker(
+                [12.874061813819088, 77.64604568481445],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_6b4fb2e1e7fec1bf7608dd9318ff36ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_43df07d3b02a0d9a30ce3533898dfb9a.setIcon(icon_6b4fb2e1e7fec1bf7608dd9318ff36ab);
+        
+    
+        var popup_eea35243c96cc65d208e816fa76795ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318e65c507f635628642eaaa88ff32e6 = $(`<div id="html_318e65c507f635628642eaaa88ff32e6" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_eea35243c96cc65d208e816fa76795ef.setContent(html_318e65c507f635628642eaaa88ff32e6);
+            
+        
+
+        marker_43df07d3b02a0d9a30ce3533898dfb9a.bindPopup(popup_eea35243c96cc65d208e816fa76795ef)
+        ;
+
+        
+    
+    
+            var marker_4c817065bfe231b89b9eb4c97ccccac5 = L.marker(
+                [12.87372712123383, 77.64351367950441],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_77d2e4540d5e17cab8581dc943257056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c817065bfe231b89b9eb4c97ccccac5.setIcon(icon_77d2e4540d5e17cab8581dc943257056);
+        
+    
+        var popup_b0a116ca01e1da37f7ebc97ad7da4af2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e110bb123c09fbd6dabbb637a92626d = $(`<div id="html_6e110bb123c09fbd6dabbb637a92626d" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_b0a116ca01e1da37f7ebc97ad7da4af2.setContent(html_6e110bb123c09fbd6dabbb637a92626d);
+            
+        
+
+        marker_4c817065bfe231b89b9eb4c97ccccac5.bindPopup(popup_b0a116ca01e1da37f7ebc97ad7da4af2)
+        ;
+
+        
+    
+    
+            var marker_fa9ef9577da23e22c118fb75c904ad72 = L.marker(
+                [12.874229159944147, 77.64029502868654],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_b6678517b7fbacfc7832707f4ae3e07f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa9ef9577da23e22c118fb75c904ad72.setIcon(icon_b6678517b7fbacfc7832707f4ae3e07f);
+        
+    
+        var popup_a4b8c373330a59c5d3ee9f6ed2e6bd2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b034053d9fe9a0442c007cca4237e9af = $(`<div id="html_b034053d9fe9a0442c007cca4237e9af" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_a4b8c373330a59c5d3ee9f6ed2e6bd2e.setContent(html_b034053d9fe9a0442c007cca4237e9af);
+            
+        
+
+        marker_fa9ef9577da23e22c118fb75c904ad72.bindPopup(popup_a4b8c373330a59c5d3ee9f6ed2e6bd2e)
+        ;
+
+        
+    
+    
+            var marker_efe643eb584c67a4c4521ee587cb7a74 = L.marker(
+                [12.877408715093377, 77.6387071609497],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_d030e92a7daae8b25c5639e70dfd0571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_efe643eb584c67a4c4521ee587cb7a74.setIcon(icon_d030e92a7daae8b25c5639e70dfd0571);
+        
+    
+        var popup_0324caf31e62fc530e751fcb24d74217 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36f565907837f2831400416b1ee764bf = $(`<div id="html_36f565907837f2831400416b1ee764bf" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_0324caf31e62fc530e751fcb24d74217.setContent(html_36f565907837f2831400416b1ee764bf);
+            
+        
+
+        marker_efe643eb584c67a4c4521ee587cb7a74.bindPopup(popup_0324caf31e62fc530e751fcb24d74217)
+        ;
+
+        
+    
+    
+            var marker_d1ec6604ebb659160f279ed8e706a41b = L.marker(
+                [12.87945867005269, 77.63432979583742],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_1cde4bf108884560a9008847aaebfbd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d1ec6604ebb659160f279ed8e706a41b.setIcon(icon_1cde4bf108884560a9008847aaebfbd6);
+        
+    
+        var popup_b03706929cd0a21c8b1c369b01352be3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab34569802aa2ea2d6612e6c72345c95 = $(`<div id="html_ab34569802aa2ea2d6612e6c72345c95" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_b03706929cd0a21c8b1c369b01352be3.setContent(html_ab34569802aa2ea2d6612e6c72345c95);
+            
+        
+
+        marker_d1ec6604ebb659160f279ed8e706a41b.bindPopup(popup_b03706929cd0a21c8b1c369b01352be3)
+        ;
+
+        
+    
+    
+            var marker_9f187ed15aa5c9a8d162e30470bd9a34 = L.marker(
+                [12.8778689105235, 77.62540340423585],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_67ac18938b1caabfc1576adc1bf09d1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9f187ed15aa5c9a8d162e30470bd9a34.setIcon(icon_67ac18938b1caabfc1576adc1bf09d1f);
+        
+    
+        var popup_561e446770110ff79dca874637e37295 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5a3452f0d3e0a64e5226aec29d4a22 = $(`<div id="html_ec5a3452f0d3e0a64e5226aec29d4a22" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_561e446770110ff79dca874637e37295.setContent(html_ec5a3452f0d3e0a64e5226aec29d4a22);
+            
+        
+
+        marker_9f187ed15aa5c9a8d162e30470bd9a34.bindPopup(popup_561e446770110ff79dca874637e37295)
+        ;
+
+        
+    
+    
+            var marker_01421d1ac4bdd2bc3bc91a31096ce722 = L.marker(
+                [12.882805499250228, 77.62480258941652],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_bf0a22e1316ab163e4d192305465e78c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_01421d1ac4bdd2bc3bc91a31096ce722.setIcon(icon_bf0a22e1316ab163e4d192305465e78c);
+        
+    
+        var popup_5f1da28e9aabc047409fc561f355138c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73e8169ffcd33bf4e301c41786f22fa2 = $(`<div id="html_73e8169ffcd33bf4e301c41786f22fa2" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_5f1da28e9aabc047409fc561f355138c.setContent(html_73e8169ffcd33bf4e301c41786f22fa2);
+            
+        
+
+        marker_01421d1ac4bdd2bc3bc91a31096ce722.bindPopup(popup_5f1da28e9aabc047409fc561f355138c)
+        ;
+
+        
+    
+    
+            var marker_44dc02e159aef7f43e52d62187b4c6fa = L.marker(
+                [12.890503036701302, 77.62596130371095],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_d2a378586678dcef4cf6a01344922521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_44dc02e159aef7f43e52d62187b4c6fa.setIcon(icon_d2a378586678dcef4cf6a01344922521);
+        
+    
+        var popup_adb6d6345551e20314eb93c645b1c92a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fda5e141c304fc44fb493134fa824a12 = $(`<div id="html_fda5e141c304fc44fb493134fa824a12" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_adb6d6345551e20314eb93c645b1c92a.setContent(html_fda5e141c304fc44fb493134fa824a12);
+            
+        
+
+        marker_44dc02e159aef7f43e52d62187b4c6fa.bindPopup(popup_adb6d6345551e20314eb93c645b1c92a)
+        ;
+
+        
+    
+    
+            var marker_369658c1aa3eb7985e7004820f8cfe8f = L.marker(
+                [12.896610696941568, 77.62617588043214],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_2ae456a9c5e6b65261b83cd91bd9ae33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_369658c1aa3eb7985e7004820f8cfe8f.setIcon(icon_2ae456a9c5e6b65261b83cd91bd9ae33);
+        
+    
+        var popup_aa11863215e6cf83d939dfba857b18c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4408e58b688f1d6ea49eb72e643bf97 = $(`<div id="html_b4408e58b688f1d6ea49eb72e643bf97" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_aa11863215e6cf83d939dfba857b18c1.setContent(html_b4408e58b688f1d6ea49eb72e643bf97);
+            
+        
+
+        marker_369658c1aa3eb7985e7004820f8cfe8f.bindPopup(popup_aa11863215e6cf83d939dfba857b18c1)
+        ;
+
+        
+    
+    
+            var marker_bafb220be07226ee97e7d4557766aea4 = L.marker(
+                [12.902174394671018, 77.62733459472658],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_fcb0c1b74c3abce3bf41fd2cbc3819a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bafb220be07226ee97e7d4557766aea4.setIcon(icon_fcb0c1b74c3abce3bf41fd2cbc3819a5);
+        
+    
+        var popup_5d5035626a5e33c24e692aff1fdce3e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9fddfe3f44e187024a305b4473e13aa = $(`<div id="html_e9fddfe3f44e187024a305b4473e13aa" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_5d5035626a5e33c24e692aff1fdce3e1.setContent(html_e9fddfe3f44e187024a305b4473e13aa);
+            
+        
+
+        marker_bafb220be07226ee97e7d4557766aea4.bindPopup(popup_5d5035626a5e33c24e692aff1fdce3e1)
+        ;
+
+        
+    
+    
+            var marker_9c2d4ab3c21d0b5230dd22c2d9932014 = L.marker(
+                [12.9017560758355, 77.62355804443361],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_81329c4497f75547155b639c9b7eab5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9c2d4ab3c21d0b5230dd22c2d9932014.setIcon(icon_81329c4497f75547155b639c9b7eab5f);
+        
+    
+        var popup_8751b67ffe648666b93bf4b97b355ebc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05e6f37bb3023c4b7ce28ce59211102d = $(`<div id="html_05e6f37bb3023c4b7ce28ce59211102d" style="width: 100.0%; height: 100.0%;">Moderate Risk Pothole</div>`)[0];
+                popup_8751b67ffe648666b93bf4b97b355ebc.setContent(html_05e6f37bb3023c4b7ce28ce59211102d);
+            
+        
+
+        marker_9c2d4ab3c21d0b5230dd22c2d9932014.bindPopup(popup_8751b67ffe648666b93bf4b97b355ebc)
+        ;
+
+        
+    
+    
+            var marker_217c31716994755da0c57f2ab0f76339 = L.marker(
+                [12.898284002501704, 77.61982440948486],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_3b88c5b0ea29956839541889cc737c12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_217c31716994755da0c57f2ab0f76339.setIcon(icon_3b88c5b0ea29956839541889cc737c12);
+        
+    
+        var popup_9cfbd0012e7f69a10ba4bdb48ec53174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b11bafc9a203a86401a1c2dbb6b0e9f2 = $(`<div id="html_b11bafc9a203a86401a1c2dbb6b0e9f2" style="width: 100.0%; height: 100.0%;">Minor Issue Pothole</div>`)[0];
+                popup_9cfbd0012e7f69a10ba4bdb48ec53174.setContent(html_b11bafc9a203a86401a1c2dbb6b0e9f2);
+            
+        
+
+        marker_217c31716994755da0c57f2ab0f76339.bindPopup(popup_9cfbd0012e7f69a10ba4bdb48ec53174)
+        ;
+
+        
+    
+    
+            var marker_412f8f1769f0ffec5654bc4ea479e8a8 = L.marker(
+                [12.897907509726322, 77.61450290679933],
+                {}
+            ).addTo(map_8f5df4f12ea51aef03a03491108d7e9c);
+        
+    
+            var icon_0317a51f6cf85839c15c4831925596eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-triangle", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_412f8f1769f0ffec5654bc4ea479e8a8.setIcon(icon_0317a51f6cf85839c15c4831925596eb);
+        
+    
+        var popup_cc9fabc54ba083af179c6ee6101b11bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc5a0399ceb759528c399accc0d3ffb5 = $(`<div id="html_cc5a0399ceb759528c399accc0d3ffb5" style="width: 100.0%; height: 100.0%;">Severe Hazard Pothole</div>`)[0];
+                popup_cc9fabc54ba083af179c6ee6101b11bf.setContent(html_cc5a0399ceb759528c399accc0d3ffb5);
+            
+        
+
+        marker_412f8f1769f0ffec5654bc4ea479e8a8.bindPopup(popup_cc9fabc54ba083af179c6ee6101b11bf)
+        ;
+
+        
+    
+</script>
+</html>
